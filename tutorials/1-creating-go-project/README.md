@@ -1,7 +1,7 @@
 # Introduction 
-This tutorial contains instructions how to create a Golang project according to best practice. We are going to use CPS [go-template](https://github.com/eislab-cps/go-template), which includes a working GitHub action and a simple CLI example.
+This tutorial contains instructions how to create a Golang project according to best practice. We are going to use CPS [go-template](https://github.com/eislab-cps/go-template), which includes a working GitHub action and a simple Command Line Interface (CLI) example.
 
-## Create a fork of the `go-template` project.
+## Create a fork of the `go-template` project
 1. Open browser and go to: [https://github.com/eislab-cps/go-template](https://github.com/eislab-cps/go-template)
 2. Click on Fork (depicted inside the red circle)
 ![fork](imgs/fork.png)
@@ -87,7 +87,7 @@ ok  	github.com/johankristianss/d7024e-tutorial/pkg/helloworld
 make 
 ```
 
-### Run the `helloworld` command.
+### Run the `helloworld` command
 ```console
 ./bin/helloworld talk
 ```
@@ -97,4 +97,4 @@ INFO[0000] Talking...                                    Msg="Hello, World!" Oth
 Hello, World!
 ```
 
-The next [tutorial](https://github.com/eislab-cps/d7024e/XXXX) explains in details how the `helloworld` CLI works.
+The next [tutorial](https://github.com/eislab-cps/d7024e/tree/main/tutorials/2-understanding-helloworld) explains in details how the `helloworld` CLI works.
