@@ -209,18 +209,26 @@ To run a single test, type:
 go test -v -test.run TestNewHelloWorld
 ```
 
+You can also test the entire project by typing `make test` in the project root. Remember to update the `Makefile`if you add more packages.
+
 # Advantage of this Golang structure
-This project structure offers several significant benefits for developing maintainable and scalable Go applications:
+This project structure offers several significant benefits for developing maintainable and scalable Go applications. See the Makefile snipppet below.
+
+```console
+test:
+    @cd pkg/helloworld; go test -v --race
+```
+
 
 ## Separation of Concerns
-**Clear Package Boundaries**: The structure enforces clean separation between CLI handling (`internal/cli`), business logic (`pkg/helloworld`), and application entry points (`cmd/main.go`). This makes the codebase easier to understand and modify.
+**Clear Package Boundaries**: The structure enforces clean separation between CLI handling `internal/cli`, application logic `pkg/helloworld`, and application entry points (`cmd/main.go`). This makes the codebase easier to understand and modify.
 
-**Testability**: By isolating business logic in the `pkg/` directory, you can test core functionality independently of CLI concerns. The `HelloWorld` struct can be tested without involving command-line parsing or user interface elements.
+**Testability**: By isolating application logic in the `pkg/` directory, you can test core functionality independently of CLI concerns. The `HelloWorld` struct can be tested without involving command-line parsing or user interface elements.
 
 **Reusability**: Code in the `pkg/` directory can be imported and reused by other projects, while `internal/` code remains private to your application.
 
 ## Scalability and Maintainability
-**Modular Architecture**: Adding new subcommands becomes straightforward - simply create a new file in `internal/cli/` and register it with the root command. Each command remains self-contained and focused.
+**Modular Architecture**: Adding new subcommands becomes straightforward. Simply create a new file in `internal/cli/` and register it with the root command. Each command remains self-contained and seperate from other subcommands.
 
 **Version Management**: The build-time injection of `BuildVersion` and `BuildTime` variables provides excellent traceability for deployments and debugging in production environments.
 
@@ -238,6 +246,6 @@ This project structure offers several significant benefits for developing mainta
 
 **Build Automation**: The `Makefile` provides standardized commands for common development tasks, ensuring consistent builds and testing across team members.
 
-**Easy Extension**: Whether you need to add new business logic, CLI commands, or external integrations, the structure provides clear places for each type of code.
+**Easy Extension**: Whether you need to add new application logic, CLI commands, or external integrations, the structure provides clear places for each type of code.
 
 This architecture scales well from simple CLI tools to complex distributed systems, as demonstrated by its adoption in major projects like Kubernetes and Docker.
