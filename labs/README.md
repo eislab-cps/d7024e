@@ -22,7 +22,7 @@ We also want to introduce you to some of the tools and technologies that are com
 In particular, you are advised to write the program in [Google's Go language](https://tour.golang.org/), which was specifically designed for writing distributed applications, and for managing nodes by using [Docker containers](https://docs.docker.com/get-started/).
 You are not forced to use either, but you will not be able to receive programming or container help from the teaching assistants if you choose to use any other programming language or container solution.
 In other words, you are required to use a programming language and a container solution, but you are not strictly required to use Go or Docker.
-If you decide to use Go, we provide code you can use as a starting point in [GitHub](/kademlia).
+If you decide to use Go, we provide code you can use as a starting point in [GitHub](kademlia/).
 We would **highly** recommend using Go as your programming language of choice.
 From experience, using any other language has historically been a struggle for students, as even if you choose another programming language, you must adhere to the exact same requirements.
 
