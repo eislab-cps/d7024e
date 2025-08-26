@@ -4,7 +4,7 @@ This repo contains the lab assignment, tutorials and useful code for the [Mobile
 ## [Tutorials](tutorials/)
 Step-by-step tutorials covering Go programming aspects for distributed systems, from basic project setup to implementing a distributed algorithms. These tutorials provide the foundational knowledge needed for the course assignments.
 
-## [Laboratory Assignments](lab/)
+## [Laboratory Assignments](labs/)
 Laboratory assignments can be found here. These hands-on assignments allow you to apply the concepts learned in lectures and tutorials to practical distributed systems problems.
 
 ```
