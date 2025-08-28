@@ -212,13 +212,7 @@ go test -v -test.run TestNewHelloWorld
 You can also test the entire project by typing `make test` in the project root. Remember to update the `Makefile`if you add more packages.
 
 # Advantage of this Golang structure
-This project structure offers several significant benefits for developing maintainable and scalable Go applications. See the Makefile snipppet below.
-
-```console
-test:
-    @cd pkg/helloworld; go test -v --race
-```
-
+This project structure offers several significant benefits for developing maintainable and scalable Go applications. 
 
 ## Separation of Concerns
 **Clear Package Boundaries**: The structure enforces clean separation between CLI handling `internal/cli`, application logic `pkg/helloworld`, and application entry points (`cmd/main.go`). This makes the codebase easier to understand and modify.
