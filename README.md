@@ -16,5 +16,6 @@ d7024e/
 │   ├── 4-mocking-networks/
 │   └── 5-implementing-and-testing-a-distributed-algorithm/
 ├── labs/                        # Laboratory assignments (added during course)
+│   └── kademlia/
 └── README.md                    # This file
 ```
