@@ -540,6 +540,7 @@ func TestWithTimeout(t *testing.T) {
         t.Fatal("Test timed out")
     }
 }
+```
 
 ## Best Practices for Testing Concurrent Code
 1. **Always use `-race` flag** when running tests
