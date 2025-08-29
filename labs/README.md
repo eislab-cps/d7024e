@@ -45,45 +45,44 @@ Note that during assessment, each group member is expected to be able to demonst
 There are also further requirements that must be considered and delimitations we make to simplify the lab a bit.
 
 ### Mandatory
-**M1**: *Network formation*. **[5p]**. 
+**M1**: *Network formation*. **[5p]**.
 Your nodes must be able to form networks as described in the [Kademlia paper](kademlia-description.pdf)[^1]. Kademlia is a protocol for facilitating *[Distributed Hash Tables](https://en.wikipedia.org/wiki/Distributed_hash_table)* (DHTs). Concretely, the following aspects of the algorithm must be implemented:
 1. **Pinging**: This means that you must implement and use the `PING` message.
 2. **Network joining**: Given the IP address and any other data you decide, any single node must be able to join or form a network with the other node.
 3. **Node lookup**: When part of a network, each node must be able to retrieve the contact information of any other node in the same network.
 
-**M2**: *Object Distribution*. **[5p]**. 
+**M2**: *Object Distribution*. **[5p]**.
 The networks your nodes form must be able to manage the distribution, storage and retrieval of data objects, as described in the Kademlia paper. Note that in the Kademlia paper, objects are referred to as *values* and their hashes as *keys*.
 Concretely, you must implement the following aspects of Kademlia:
 1. **Storing objects**: When part of a network, it must be possible for any node to upload an object that will end up at the designated storage nodes. In Kademlia terminology, the *designated nodes* are the *K* nodes nearest to the hash of the data object in question.
 2. **Finding objects**: When part of a network with uploaded objects, it must be possible to find and download any object, as long as it is stored by at least one designated node.
 
-**M3**: *Command line interface*. **[5p]**. 
+**M3**: *Command line interface*. **[5p]**.
 Each node must provide a command line interface through which the following commands can be executed:
 1. `put`: Takes a single argument, the contents of the file you are uploading, and outputs the hash of the object, if it can be uploaded successfully.
 2. `get`: Takes a hash as its only argument, and outputs the contents of the object and the node it was retrieved from, if it could be downloaded successfully.
 3. `exit`: Terminates the node.
 
-**M4**: **Unit testing**. **[5p]**. 
+**M4**: **Unit testing**. **[5p]**.
 You must demonstrate that the core parts of your implementation work as expected by writing unit tests.
-Note that unit tests *never* cross process boundaries, which means that they do not send network messages, read or write files, require user input, etc.
-Unit tests prove that the internal constructs of an application behave as expected, such as that the calculation of `XOR` distances is correct, or that contacts are inserted at the correct places in buckets, and so on.
+Unit tests check that the internal constructs of an application behave as expected, such as that the calculation of `XOR` distances is correct, or that contacts are inserted at the correct places in buckets, and so on.
 Your unit tests must include some type of **network emulation** where you can emulate **at least 1000 nodes**, and **you must include some type of package dropping functionality**.
 Both the number of nodes that are emulated and the package dropping percentage should be easy to change for testing purposes.
 See [Appendix](#appendices) for a brief tutorial. **We expect a test coverage of at least 50\%** [^2].
 
-**M5**: *Containerization*. **[5p]**. 
+**M5**: *Containerization*. **[5p]**.
 You must be able to spin up a network of nodes on a single machine. **The network must consist of at least 50 nodes, each in its own container**[^3].
 You may spin up and take down the network in any way you like, but you will likely save a lot of time if you either use a script or an orchestration solution[^4] to start and stop the network.
 
-**M6**: *Lab report*. **[5p]**. 
+**M6**: *Lab report*. **[5p]**.
 You must continuously work on and update a lab report. The required contents of the report are outlined later in the Method section.
 
 **M7**: *Concurrency and thread safety*. **[6p]**.
-To complete this objective, you must use some form of concurrency construct, such as threads or Go channels, to make the handling of messages concurrent.
+To complete this objective, you must use some form of concurrency construct, such as threads, to make the handling of messages concurrent.
 You must also be able to account for how you guarantee thread safety, via locks or otherwise.
 
 ### Qualifying
-**U1**: *Object expiration*. **[2p]**. 
+**U1**: *Object expiration*. **[2p]**.
 Each node associates each data object it stores with a certain *Time-To-Live* (TTL).
 When the TTL expires, the data object in question is silently deleted.
 However, every time the data object is requested and transmitted, the TTL is to be reset.
@@ -102,7 +101,7 @@ Completing this objective requires that U2 is also completed.
 
 **U4**: *RESTful application interface*. **[6p]**.
 A CLI interface may be useful for humans with terminals, but it makes it difficult to integrate your storage network into web applications or other applications.
-To remedy this, you will make every node also provide a RESTful as described at: [https://www.ics.uci.edu/~fielding/pubs/dissertation/rest\_arch\_style.htm](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest\_arch\_style.htm). 
+To remedy this, you will make every node also provide a RESTful as described at: [https://www.ics.uci.edu/~fielding/pubs/dissertation/rest\_arch\_style.htm](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest\_arch\_style.htm).
 HTTP interface with the following endpoints:
 1. `POST /objects`:
 Each message sent to the endpoint must contain a data object in its HTTP body.
@@ -113,6 +112,10 @@ A successful call should result in the contents of the object being responded to
 
 **U5**: *Higher unit test coverage*. **[2p]**.
 This objective is considered completed if you can get **a unit test coverage of 80\% or higher**.
+
+**U6**: *Implement the full/general Kademlia routing tree structure*. **[3p]**.
+The branching parameter `b` (see subsection 4.2 of the Kademlia paper) must be freely adjustable.
+You must have test cases that clearly demonstrate the correct behavior of the tree (in particular that buckets are split correctly for a given value of `b`).
 
 ## Further requirements
 1. You are not allowed to use any packages that abstract too much functionality. An example of a package that hides too much functionality is any RPC package. If you are unsure, you can ask a TA, but make sure that you can explain what the library does and why it would be OK. If you want an example of a package which is at an OK abstraction level, you can refer to [protobuf package](https://github.com/golang/protobuf).
@@ -128,8 +131,9 @@ To make this task manageable within the time frame of this course, we make these
 4. Data objects are not saved to disk, which means that they disappear if you terminate the nodes that hold copies of them.
 5. No communication is encrypted.
 6. All network nodes have access to all stored data objects without needing any permissions.
+7. The simplified, flat routing table is sufficient. Implementing the full/general tree is optional as a qualifying objective for extra points.
 
-You are allowed to ignore any of these delimitations if you like, but be aware that it may complicate your implementation significantly. 
+You are allowed to ignore any of these delimitations if you like, but be aware that it may complicate your implementation significantly.
 You are not guaranteed a higher grade on the lab for making your implementation more complete, but you may consider the learning experience worth the effort.
 
 ## Method
