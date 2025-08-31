@@ -77,7 +77,7 @@ func main() {
 }
 ```
 
-Note that ´defer´ is called when the function exits, whether by reaching the end of the function or by a return statement. This is useful for ensuring that resources are cleaned up properly, even if an error occurs. 
+Note that `defer` is called when the function exits, whether by reaching the end of the function or by a return statement. This is useful for ensuring that resources are cleaned up properly, even if an error occurs. 
 
 # Synchronization and channels
 Like other concurrent programming models, goroutines need a way to synchronize their actions. A standard way to do this is by using mutexes. A mutex is a mutual exclusion lock that can be used to protect shared data from being accessed by multiple goroutines at the same time. Another way to synchronize goroutines is by using channels. Channels are a way to communicate between goroutines and can be used to send and receive values. 

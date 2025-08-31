@@ -6,10 +6,9 @@ in a distributed system, allowing for testing and development without the need f
 Mock networks provide several critical advantages for distributed systems development:
 
 - **Deterministic behavior**: Unlike real networks, mock networks provide predictable, reproducible behavior. 
-- **Controlled failure simulation**: Easily test network partitions, message loss, and latency without complex network setup.
-- **Correctness verification**: Focus on algorithm logic rather than network implementation details.
+- **Controlled failure simulation**: Easily test network partitions, message loss, and latency without complex network setup. In this way, it becomes possible tp test individual components without interference from network issues.
 - **No external dependencies**: Tests run without requiring network infrastructure, ports, or external services.
-- **Isolation**: Test individual components without interference from network issues.
+- **Correctness verification**: Focus on algorithm logic rather than network implementation details.
 - **Fast execution**: In-memory message passing is orders of magnitude faster than real network I/O.
 - **Rapid prototyping**: Implement and test distributed algorithms without network complexity.
 - **Debugging**: Full visibility into message flow and timing without network packet analysis.
@@ -17,7 +16,7 @@ Mock networks provide several critical advantages for distributed systems develo
 - **Edge case testing**: Easily create scenarios like split-brain, network partitions, and message reordering.
 - **Performance analysis**: Measure algorithm behavior without network latency noise.
 
-Interfaces define contracts that multiple implementations can fulfill, making code more flexible and testable. This becomes especially valuable when you need different network implementations:
+Interfaces define contracts that multiple implementations can fulfill, making code more flexible and testable. Consider the code below:
 
 ```go
 // Same interface, different implementations
@@ -44,20 +43,28 @@ By defining an abstract Network interface that decouples implementation from spe
 Golang interfaces are a way to define behavior in your code. An interface is a type that specifies a set of method signatures. Any type that implements those methods satisfies the interface.
 
 Below is a simple example of a Golang interface:
+
 ```go
 package main
+
 import "fmt"
+
 type Animal interface {
     Speak() string
 }
+
 type Dog struct{}
+
 func (d Dog) Speak() string {
     return "Woof!"
 }
+
 type Cat struct{}
+
 func (c Cat) Speak() string {
     return "Meow!"
 }
+
 func main() {
     var a Animal
     a = Dog{}
@@ -113,7 +120,7 @@ type Message struct {
 }
 ```
 
-To implement a mock network we need to implement the ``Network`` and the ``Connection`` interface. Instead of sending data over an IP network, we'll simulate network communication using Go channels.
+To implement a mock network we need to implement the `Network` and the `Connection` interface. Instead of sending data over an IP network, we'll simulate network communication using Go channels.
 
 The mockNetwork acts as a central message router that:
 - **Maps addresses to channels**: Each network address corresponds to a Go channel that receives messages.
@@ -252,7 +259,7 @@ func (c *mockConnection) Close() error {
 ```
 
 ## Node Implementation
-While the low-level ``Network`` and ``Connection`` interfaces provide the foundation of our mock network implementation, using them directly requires repetitive boilerplate code. Let's implement a unified ``Node`` abstraction that simplifies sending and receiving messages.
+While the low-level `Network` and `Connection` interfaces provide the foundation of our mock network implementation, using them directly requires repetitive boilerplate code. Let's implement a unified `Node` abstraction that simplifies sending and receiving messages.
 
 - **Network layer**: Handles low-level message transport, partitioning, connection management.
 - **Node**: Unified abstraction that handles both incoming and outgoing message patterns.
@@ -397,10 +404,10 @@ func (n *Node) Address() Address {
 ```
 
 # Examples 
-The ```node_test.go```` file contains test code to experiment with the mock network implementation. When working with Go, consider organizing your experimental code and examples as test functions in ```_test.go``` files rather than using ```main()```` functions. Since a Go package can only have one ```main()```  function but unlimited test functions, this approach allows you to:
+The `node_test.go` file contains test code to experiment with the mock network implementation. When working with Go, consider organizing your experimental code and examples as test functions in `_test.go` files rather than using `main()` functions. Since a Go package can only have one `main()`  function but unlimited test functions, this approach allows you to:
 
 - Keep multiple code examples in a single project without conflicts.
-- Run specific examples individually using ```go test -run TestName```.
+- Run specific examples individually using `go test -run TestName`.
 - Re-execute and modify examples easily.
 - Build a collection of working snippets for reference.
 - Follow Go community conventions.
@@ -456,7 +463,7 @@ ok      command-line-arguments  0.325s
 # Thread Safety and Concurrency
 The mock network implementation uses Go's `sync.RWMutex` (Read-Write Mutex) to ensure thread safety when multiple goroutines access shared data structures concurrently.
 
-## Understanding RWMutex vs Mutex
+## RWMutex vs Mutex
 - **`sync.Mutex`**: Provides exclusive access - only one goroutine can hold the lock at a time.
 - **`sync.RWMutex`**: Provides shared/exclusive access:
 - Multiple goroutines can hold read locks simultaneously (`RLock()`)
@@ -489,7 +496,7 @@ func (n *mockNetwork) Dial(addr Address) (Connection, error) {
 }
 ```
 
-**Why RLock here?** `Dial()` only needs to check if an address exists in the listeners map. Since it's not modifying the map, multiple goroutines can safely read from it concurrently using `RLock()`.
+`Dial()` only needs to check if an address exists in the listeners map. Since it's not modifying the map, multiple goroutines can safely read from it concurrently using `RLock()`.
 
 ### Write Operations (Lock)
 Used when modifying shared data structures:
@@ -508,7 +515,7 @@ func (n *mockNetwork) Listen(addr Address) (Connection, error) {
 }
 ```
 
-**Why Lock here?** `Listen()` modifies the listeners map by adding a new entry. This requires exclusive access to prevent race conditions.
+`Listen()` modifies the listeners map by adding a new entry. This requires exclusive access to prevent race conditions.
 
 ## Connection-Level Synchronization
 Each `mockConnection` has its own mutex to protect connection-specific state:
