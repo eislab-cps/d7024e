@@ -113,7 +113,7 @@ func main() {
 Since, the counter variable accessed simultaneously by two goroutines, the final value of counter may be less than 2000 due to lost updates. Go has built-in support for detecting race conditions, by using the `-race` flag when running or building the program: 
 
 ```console
-go run -race main.go
+$ go run -race main.go
 ==================
 WARNING: DATA RACE
 Read at 0x000102f6caa8 by goroutine 5:
@@ -189,7 +189,7 @@ func main() {
 No race conditions detected this time. 
 
 ```console
-go run -race  main.go
+$ go run -race  main.go
 Final Counter: 2000
 ```
 
@@ -314,7 +314,7 @@ Channel closed, stopping consumer
 Communication complete!
 ```
 
-Why is the print out in different order? Because the producer can send all 5 values into the buffered channel without waiting for the consumer to receive them, allowing it to finish sending before the consumer starts receiving.
+Note that the producer sent all messages at once. This is because the producer can send all 5 values into the buffered channel without waiting for the consumer to receive them, allowing it to finish sending before the consumer starts receiving.
 
 ### Select statement
 The `select` statement lets a goroutine wait on multiple communication operations. A `select` blocks until one of its cases can run, then it executes that case. It chooses randomly if multiple cases are ready simultaneously. Think of it like a `switch` statement but for channels.
@@ -388,7 +388,7 @@ func main() {
 ```
 
 ```console
-go run -race main.go
+$ go run -race main.go
 Timeout: no response within 1 second
 ```
 
@@ -556,7 +556,7 @@ func TestWithTimeout(t *testing.T) {
 Since concurrent bugs can be intermittent, always run tests multiple times:
 
 ```bash
-go test -race -count=100 .
+$ go test -race -count=100 .
 ```
 
 # Advanced Patterns
@@ -613,7 +613,7 @@ func main() {
 ```
 
 ```console
-go run main.go
+$ go run main.go
 Worker 3: working...
 Worker 2: working...
 Worker 1: working...
@@ -660,7 +660,7 @@ func main() {
 ```
 
 ```console
-go run main.go
+$ go run main.go
 Operation timed out: context deadline exceeded
 ```
 
@@ -729,7 +729,7 @@ func main() {
 ```
 
 ```console
-go run main.go
+$ go run main.go
 Worker 3: processing task 1
 Worker 2: processing task 3
 Worker 1: processing task 2
@@ -846,7 +846,7 @@ func main() {
 ```
 
 ```console
-go run main.go
+$ go run main.go
 Worker 2: processing job 2
 Worker 1: processing job 1
 Worker 3: processing job 3
