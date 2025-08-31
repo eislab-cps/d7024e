@@ -4,7 +4,7 @@ This tutorial demonstrates how to implement, test, and visualize distributed alg
 ## What is a Gossip Protocol?
 Gossip protocols are fundamental distributed algorithms that mimic how information spreads in human social networks. Gossip protocols are inspired by how epidemics spread through populations and how rumors propagate in social networks. Just as a person tells a rumor to their friends, who then tell their friends, information in gossip protocols spreads exponentially through a network.
 
-**Corea idea**:
+**Core idea**:
 - Each node knows only a few other nodes (its "peers").
 - When a node receives new information, it forwards it to all its peers.
 - Information spreads exponentially through the network.
@@ -157,7 +157,6 @@ Debugging distributed algorithms through logs and metrics alone can sometimes be
 - **Performance Analysis**: Identify hotspots and inefficient message routing.
 
 Since Go isn't optimized for visualization (lacking rich graphics ecosystems), the recommended approach is:
-
 1. Data Generation in Go: Export simulation data as structured formats (JSON/CSV).
 2. AI-Assisted Visualization: Use AI to generate visualization code in web technologies or Python.
 3. Interactive Analysis: Load data into the generated visualization for exploration.

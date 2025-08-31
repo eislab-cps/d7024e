@@ -3,8 +3,7 @@ This guide explains how to implement a mock network layer in Golang to make it e
 distributed algorithms. The mock network layer simulates network communication between nodes
 in a distributed system, allowing for testing and development without the need for actual network infrastructure.
 
-Mock networks provide several critical advantages for distributed systems development:
-
+**Mock networks provide several critical advantages for distributed systems development:**
 - **Deterministic behavior**: Unlike real networks, mock networks provide predictable, reproducible behavior. 
 - **Controlled failure simulation**: Easily test network partitions, message loss, and latency without complex network setup. In this way, it becomes possible tp test individual components without interference from network issues.
 - **No external dependencies**: Tests run without requiring network infrastructure, ports, or external services.
@@ -40,7 +39,7 @@ By defining an abstract Network interface that decouples implementation from spe
 - **Switch implementations** without changing algorithm code.
 
 # Understanding Golang interfaces
-Golang interfaces are a way to define behavior in your code. An interface is a type that specifies a set of method signatures. Any type that implements those methods satisfies the interface.
+Compared to other languages, Golang uses a fundamentally different approach to defining contracts between code components. Rather than explicitly declaring "I implement interface X as in Java or C++," Go uses implicit satisfaction. If your type has the right methods, it automatically satisfies the interface. This approach encourages composition over inheritance, promoting more modular and maintainable code.
 
 Below is a simple example of a Golang interface:
 
@@ -80,10 +79,6 @@ Woof!
 Meow!
 ```
 
-Golang is not a traditional object-oriented programming language. While it does support some object-oriented concepts like encapsulation and polymorphism through interfaces, it does not have classes or inheritance. Instead, Golang uses structs to define data types and interfaces to define behavior. This approach encourages composition over inheritance, promoting more modular and maintainable code.
-
-In object-oriented programming languages like Java or C++, you typically have to explicitly declare that a class implements an interface. For example, in Java, you would use the `implements` keyword. Golang interfaces on the other hand are implicit. This means that you don't need to explicitly declare that a type implements an interface. If a type has the methods that the interface requires, it automatically satisfies the interface. This implicit implementation allows for more flexibility and decoupling in your code. You can create new types that satisfy an interface without modifying the interface itself or the types that already implement it.
-
 # Implementing a mock network layer in Golang
 To implement a mock network layer in Golang, we need to define an interface for the network layer and then create a mock implementation of that interface. The mock implementation will simulate network communication between nodes. What functionality we want to include in our mock network layer will depend on the specific requirements of the distributed algorithms we are implementing. However, a basic mock network layer might include methods for sending and receiving messages between nodes.
 
@@ -122,7 +117,7 @@ type Message struct {
 
 To implement a mock network we need to implement the `Network` and the `Connection` interface. Instead of sending data over an IP network, we'll simulate network communication using Go channels.
 
-The mockNetwork acts as a central message router that:
+The `mockNetwork` code below acts as a central message router that:
 - **Maps addresses to channels**: Each network address corresponds to a Go channel that receives messages.
 - **Routes messages between nodes**: When you send to an address, it forwards the message to that address's channel.
 - **Simulates network failures**: Can partition nodes or make them unreachable.
