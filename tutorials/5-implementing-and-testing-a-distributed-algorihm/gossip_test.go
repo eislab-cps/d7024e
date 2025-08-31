@@ -6,18 +6,18 @@ import (
 	"time"
 )
 
-func TestGossipProtocol1000Nodes(t *testing.T) {
+func TestGossipProtocol(t *testing.T) {
 	// Create network
 	network := NewMockNetwork()
 	builder := NewNetworkBuilder(network)
 
-	// Build network with 1000 nodes, each knowing 4 random peers
-	err := builder.CreateNodes(1000)
+	// Build network with 100 nodes, each knowing 2 random peers
+	err := builder.CreateNodes(100)
 	if err != nil {
 		t.Fatal(err)
 	}
 
-	builder.BuildRandomTopology(4)
+	builder.BuildRandomTopology(2)
 	builder.StartAllNodes()
 
 	// Start gossip from random node
@@ -52,6 +52,12 @@ func TestGossipProtocol1000Nodes(t *testing.T) {
 	fmt.Printf("- Total messages sent: %d\n", totalMessagesSent)
 	fmt.Printf("- Average messages per node: %.1f\n",
 		float64(totalMessagesSent)/float64(len(nodes)))
+
+	// Export visualization data
+	err = builder.ExportVisualizationData("./visualization")
+	if err != nil {
+		t.Errorf("Failed to export visualization data: %v", err)
+	}
 
 	builder.CloseAllNodes()
 }

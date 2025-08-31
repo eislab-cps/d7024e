@@ -1,0 +1,2392 @@
+{
+  "topology": {
+    "nodes": [
+      {
+        "id": 0,
+        "addr": "127.0.0.1:8000",
+        "x": 859,
+        "y": 454,
+        "clusterId": 0
+      },
+      {
+        "id": 1,
+        "addr": "127.0.0.1:8001",
+        "x": 846,
+        "y": 419,
+        "clusterId": 0
+      },
+      {
+        "id": 2,
+        "addr": "127.0.0.1:8002",
+        "x": 797,
+        "y": 452,
+        "clusterId": 0
+      },
+      {
+        "id": 3,
+        "addr": "127.0.0.1:8003",
+        "x": 776,
+        "y": 465,
+        "clusterId": 0
+      },
+      {
+        "id": 4,
+        "addr": "127.0.0.1:8004",
+        "x": 816,
+        "y": 418,
+        "clusterId": 0
+      },
+      {
+        "id": 5,
+        "addr": "127.0.0.1:8005",
+        "x": 868,
+        "y": 457,
+        "clusterId": 0
+      },
+      {
+        "id": 6,
+        "addr": "127.0.0.1:8006",
+        "x": 786,
+        "y": 346,
+        "clusterId": 0
+      },
+      {
+        "id": 7,
+        "addr": "127.0.0.1:8007",
+        "x": 848,
+        "y": 369,
+        "clusterId": 0
+      },
+      {
+        "id": 8,
+        "addr": "127.0.0.1:8008",
+        "x": 880,
+        "y": 405,
+        "clusterId": 0
+      },
+      {
+        "id": 9,
+        "addr": "127.0.0.1:8009",
+        "x": 921,
+        "y": 416,
+        "clusterId": 0
+      },
+      {
+        "id": 10,
+        "addr": "127.0.0.1:8010",
+        "x": 905,
+        "y": 427,
+        "clusterId": 0
+      },
+      {
+        "id": 11,
+        "addr": "127.0.0.1:8011",
+        "x": 803,
+        "y": 424,
+        "clusterId": 0
+      },
+      {
+        "id": 12,
+        "addr": "127.0.0.1:8012",
+        "x": 828,
+        "y": 507,
+        "clusterId": 0
+      },
+      {
+        "id": 13,
+        "addr": "127.0.0.1:8013",
+        "x": 851,
+        "y": 442,
+        "clusterId": 0
+      },
+      {
+        "id": 14,
+        "addr": "127.0.0.1:8014",
+        "x": 849,
+        "y": 465,
+        "clusterId": 0
+      },
+      {
+        "id": 15,
+        "addr": "127.0.0.1:8015",
+        "x": 785,
+        "y": 441,
+        "clusterId": 0
+      },
+      {
+        "id": 16,
+        "addr": "127.0.0.1:8016",
+        "x": 875,
+        "y": 414,
+        "clusterId": 0
+      },
+      {
+        "id": 17,
+        "addr": "127.0.0.1:8017",
+        "x": 793,
+        "y": 484,
+        "clusterId": 0
+      },
+      {
+        "id": 18,
+        "addr": "127.0.0.1:8018",
+        "x": 799,
+        "y": 468,
+        "clusterId": 0
+      },
+      {
+        "id": 19,
+        "addr": "127.0.0.1:8019",
+        "x": 891,
+        "y": 421,
+        "clusterId": 0
+      },
+      {
+        "id": 20,
+        "addr": "127.0.0.1:8020",
+        "x": 920,
+        "y": 496,
+        "clusterId": 0
+      },
+      {
+        "id": 21,
+        "addr": "127.0.0.1:8021",
+        "x": 773,
+        "y": 369,
+        "clusterId": 0
+      },
+      {
+        "id": 22,
+        "addr": "127.0.0.1:8022",
+        "x": 859,
+        "y": 402,
+        "clusterId": 0
+      },
+      {
+        "id": 23,
+        "addr": "127.0.0.1:8023",
+        "x": 834,
+        "y": 356,
+        "clusterId": 0
+      },
+      {
+        "id": 24,
+        "addr": "127.0.0.1:8024",
+        "x": 810,
+        "y": 453,
+        "clusterId": 0
+      },
+      {
+        "id": 25,
+        "addr": "127.0.0.1:8025",
+        "x": 887,
+        "y": 482,
+        "clusterId": 0
+      },
+      {
+        "id": 26,
+        "addr": "127.0.0.1:8026",
+        "x": 865,
+        "y": 417,
+        "clusterId": 0
+      },
+      {
+        "id": 27,
+        "addr": "127.0.0.1:8027",
+        "x": 755,
+        "y": 379,
+        "clusterId": 0
+      },
+      {
+        "id": 28,
+        "addr": "127.0.0.1:8028",
+        "x": 789,
+        "y": 383,
+        "clusterId": 0
+      },
+      {
+        "id": 29,
+        "addr": "127.0.0.1:8029",
+        "x": 843,
+        "y": 387,
+        "clusterId": 0
+      },
+      {
+        "id": 30,
+        "addr": "127.0.0.1:8030",
+        "x": 759,
+        "y": 468,
+        "clusterId": 0
+      },
+      {
+        "id": 31,
+        "addr": "127.0.0.1:8031",
+        "x": 808,
+        "y": 355,
+        "clusterId": 0
+      },
+      {
+        "id": 32,
+        "addr": "127.0.0.1:8032",
+        "x": 915,
+        "y": 462,
+        "clusterId": 0
+      },
+      {
+        "id": 33,
+        "addr": "127.0.0.1:8033",
+        "x": 841,
+        "y": 430,
+        "clusterId": 0
+      },
+      {
+        "id": 34,
+        "addr": "127.0.0.1:8034",
+        "x": 814,
+        "y": 522,
+        "clusterId": 0
+      },
+      {
+        "id": 35,
+        "addr": "127.0.0.1:8035",
+        "x": 858,
+        "y": 480,
+        "clusterId": 0
+      },
+      {
+        "id": 36,
+        "addr": "127.0.0.1:8036",
+        "x": 771,
+        "y": 441,
+        "clusterId": 0
+      },
+      {
+        "id": 37,
+        "addr": "127.0.0.1:8037",
+        "x": 834,
+        "y": 377,
+        "clusterId": 0
+      },
+      {
+        "id": 38,
+        "addr": "127.0.0.1:8038",
+        "x": 881,
+        "y": 424,
+        "clusterId": 0
+      },
+      {
+        "id": 39,
+        "addr": "127.0.0.1:8039",
+        "x": 867,
+        "y": 364,
+        "clusterId": 0
+      },
+      {
+        "id": 40,
+        "addr": "127.0.0.1:8040",
+        "x": 868,
+        "y": 491,
+        "clusterId": 0
+      },
+      {
+        "id": 41,
+        "addr": "127.0.0.1:8041",
+        "x": 860,
+        "y": 375,
+        "clusterId": 0
+      },
+      {
+        "id": 42,
+        "addr": "127.0.0.1:8042",
+        "x": 835,
+        "y": 497,
+        "clusterId": 0
+      },
+      {
+        "id": 43,
+        "addr": "127.0.0.1:8043",
+        "x": 759,
+        "y": 423,
+        "clusterId": 0
+      },
+      {
+        "id": 44,
+        "addr": "127.0.0.1:8044",
+        "x": 818,
+        "y": 493,
+        "clusterId": 0
+      },
+      {
+        "id": 45,
+        "addr": "127.0.0.1:8045",
+        "x": 851,
+        "y": 429,
+        "clusterId": 0
+      },
+      {
+        "id": 46,
+        "addr": "127.0.0.1:8046",
+        "x": 866,
+        "y": 472,
+        "clusterId": 0
+      },
+      {
+        "id": 47,
+        "addr": "127.0.0.1:8047",
+        "x": 864,
+        "y": 429,
+        "clusterId": 0
+      },
+      {
+        "id": 48,
+        "addr": "127.0.0.1:8048",
+        "x": 835,
+        "y": 481,
+        "clusterId": 0
+      },
+      {
+        "id": 49,
+        "addr": "127.0.0.1:8049",
+        "x": 885,
+        "y": 435,
+        "clusterId": 0
+      },
+      {
+        "id": 50,
+        "addr": "127.0.0.1:8050",
+        "x": 809,
+        "y": 405,
+        "clusterId": 0
+      },
+      {
+        "id": 51,
+        "addr": "127.0.0.1:8051",
+        "x": 791,
+        "y": 407,
+        "clusterId": 0
+      },
+      {
+        "id": 52,
+        "addr": "127.0.0.1:8052",
+        "x": 749,
+        "y": 423,
+        "clusterId": 0
+      },
+      {
+        "id": 53,
+        "addr": "127.0.0.1:8053",
+        "x": 831,
+        "y": 443,
+        "clusterId": 0
+      },
+      {
+        "id": 54,
+        "addr": "127.0.0.1:8054",
+        "x": 924,
+        "y": 437,
+        "clusterId": 0
+      },
+      {
+        "id": 55,
+        "addr": "127.0.0.1:8055",
+        "x": 870,
+        "y": 445,
+        "clusterId": 0
+      },
+      {
+        "id": 56,
+        "addr": "127.0.0.1:8056",
+        "x": 776,
+        "y": 403,
+        "clusterId": 0
+      },
+      {
+        "id": 57,
+        "addr": "127.0.0.1:8057",
+        "x": 902,
+        "y": 479,
+        "clusterId": 0
+      },
+      {
+        "id": 58,
+        "addr": "127.0.0.1:8058",
+        "x": 845,
+        "y": 450,
+        "clusterId": 0
+      },
+      {
+        "id": 59,
+        "addr": "127.0.0.1:8059",
+        "x": 874,
+        "y": 377,
+        "clusterId": 0
+      },
+      {
+        "id": 60,
+        "addr": "127.0.0.1:8060",
+        "x": 904,
+        "y": 410,
+        "clusterId": 0
+      },
+      {
+        "id": 61,
+        "addr": "127.0.0.1:8061",
+        "x": 892,
+        "y": 405,
+        "clusterId": 0
+      },
+      {
+        "id": 62,
+        "addr": "127.0.0.1:8062",
+        "x": 823,
+        "y": 359,
+        "clusterId": 0
+      },
+      {
+        "id": 63,
+        "addr": "127.0.0.1:8063",
+        "x": 825,
+        "y": 455,
+        "clusterId": 0
+      },
+      {
+        "id": 64,
+        "addr": "127.0.0.1:8064",
+        "x": 893,
+        "y": 454,
+        "clusterId": 0
+      },
+      {
+        "id": 65,
+        "addr": "127.0.0.1:8065",
+        "x": 887,
+        "y": 390,
+        "clusterId": 0
+      },
+      {
+        "id": 66,
+        "addr": "127.0.0.1:8066",
+        "x": 818,
+        "y": 444,
+        "clusterId": 0
+      },
+      {
+        "id": 67,
+        "addr": "127.0.0.1:8067",
+        "x": 756,
+        "y": 448,
+        "clusterId": 0
+      },
+      {
+        "id": 68,
+        "addr": "127.0.0.1:8068",
+        "x": 895,
+        "y": 442,
+        "clusterId": 0
+      },
+      {
+        "id": 69,
+        "addr": "127.0.0.1:8069",
+        "x": 818,
+        "y": 373,
+        "clusterId": 0
+      },
+      {
+        "id": 70,
+        "addr": "127.0.0.1:8070",
+        "x": 825,
+        "y": 434,
+        "clusterId": 0
+      },
+      {
+        "id": 71,
+        "addr": "127.0.0.1:8071",
+        "x": 854,
+        "y": 350,
+        "clusterId": 0
+      },
+      {
+        "id": 72,
+        "addr": "127.0.0.1:8072",
+        "x": 795,
+        "y": 429,
+        "clusterId": 0
+      },
+      {
+        "id": 73,
+        "addr": "127.0.0.1:8073",
+        "x": 911,
+        "y": 452,
+        "clusterId": 0
+      },
+      {
+        "id": 74,
+        "addr": "127.0.0.1:8074",
+        "x": 871,
+        "y": 396,
+        "clusterId": 0
+      },
+      {
+        "id": 75,
+        "addr": "127.0.0.1:8075",
+        "x": 787,
+        "y": 423,
+        "clusterId": 0
+      },
+      {
+        "id": 76,
+        "addr": "127.0.0.1:8076",
+        "x": 812,
+        "y": 382,
+        "clusterId": 0
+      },
+      {
+        "id": 77,
+        "addr": "127.0.0.1:8077",
+        "x": 836,
+        "y": 469,
+        "clusterId": 0
+      },
+      {
+        "id": 78,
+        "addr": "127.0.0.1:8078",
+        "x": 819,
+        "y": 475,
+        "clusterId": 0
+      },
+      {
+        "id": 79,
+        "addr": "127.0.0.1:8079",
+        "x": 836,
+        "y": 392,
+        "clusterId": 0
+      },
+      {
+        "id": 80,
+        "addr": "127.0.0.1:8080",
+        "x": 848,
+        "y": 400,
+        "clusterId": 0
+      },
+      {
+        "id": 81,
+        "addr": "127.0.0.1:8081",
+        "x": 860,
+        "y": 438,
+        "clusterId": 0
+      },
+      {
+        "id": 82,
+        "addr": "127.0.0.1:8082",
+        "x": 845,
+        "y": 485,
+        "clusterId": 0
+      },
+      {
+        "id": 83,
+        "addr": "127.0.0.1:8083",
+        "x": 862,
+        "y": 386,
+        "clusterId": 0
+      },
+      {
+        "id": 84,
+        "addr": "127.0.0.1:8084",
+        "x": 783,
+        "y": 454,
+        "clusterId": 0
+      },
+      {
+        "id": 85,
+        "addr": "127.0.0.1:8085",
+        "x": 776,
+        "y": 429,
+        "clusterId": 0
+      },
+      {
+        "id": 86,
+        "addr": "127.0.0.1:8086",
+        "x": 804,
+        "y": 333,
+        "clusterId": 0
+      },
+      {
+        "id": 87,
+        "addr": "127.0.0.1:8087",
+        "x": 835,
+        "y": 410,
+        "clusterId": 0
+      },
+      {
+        "id": 88,
+        "addr": "127.0.0.1:8088",
+        "x": 938,
+        "y": 429,
+        "clusterId": 0
+      },
+      {
+        "id": 89,
+        "addr": "127.0.0.1:8089",
+        "x": 804,
+        "y": 393,
+        "clusterId": 0
+      },
+      {
+        "id": 90,
+        "addr": "127.0.0.1:8090",
+        "x": 898,
+        "y": 363,
+        "clusterId": 0
+      },
+      {
+        "id": 91,
+        "addr": "127.0.0.1:8091",
+        "x": 851,
+        "y": 412,
+        "clusterId": 0
+      },
+      {
+        "id": 92,
+        "addr": "127.0.0.1:8092",
+        "x": 830,
+        "y": 530,
+        "clusterId": 0
+      },
+      {
+        "id": 93,
+        "addr": "127.0.0.1:8093",
+        "x": 814,
+        "y": 431,
+        "clusterId": 0
+      },
+      {
+        "id": 94,
+        "addr": "127.0.0.1:8094",
+        "x": 829,
+        "y": 421,
+        "clusterId": 0
+      },
+      {
+        "id": 95,
+        "addr": "127.0.0.1:8095",
+        "x": 801,
+        "y": 441,
+        "clusterId": 0
+      },
+      {
+        "id": 96,
+        "addr": "127.0.0.1:8096",
+        "x": 828,
+        "y": 395,
+        "clusterId": 0
+      },
+      {
+        "id": 97,
+        "addr": "127.0.0.1:8097",
+        "x": 820,
+        "y": 313,
+        "clusterId": 0
+      },
+      {
+        "id": 98,
+        "addr": "127.0.0.1:8098",
+        "x": 904,
+        "y": 378,
+        "clusterId": 0
+      },
+      {
+        "id": 99,
+        "addr": "127.0.0.1:8099",
+        "x": 822,
+        "y": 345,
+        "clusterId": 0
+      }
+    ],
+    "edges": [
+      {
+        "from": 0,
+        "to": 1
+      },
+      {
+        "from": 0,
+        "to": 45
+      },
+      {
+        "from": 1,
+        "to": 29
+      },
+      {
+        "from": 1,
+        "to": 33
+      },
+      {
+        "from": 2,
+        "to": 94
+      },
+      {
+        "from": 2,
+        "to": 67
+      },
+      {
+        "from": 3,
+        "to": 12
+      },
+      {
+        "from": 3,
+        "to": 76
+      },
+      {
+        "from": 4,
+        "to": 55
+      },
+      {
+        "from": 4,
+        "to": 96
+      },
+      {
+        "from": 5,
+        "to": 13
+      },
+      {
+        "from": 5,
+        "to": 81
+      },
+      {
+        "from": 6,
+        "to": 86
+      },
+      {
+        "from": 6,
+        "to": 29
+      },
+      {
+        "from": 7,
+        "to": 80
+      },
+      {
+        "from": 7,
+        "to": 59
+      },
+      {
+        "from": 8,
+        "to": 48
+      },
+      {
+        "from": 8,
+        "to": 96
+      },
+      {
+        "from": 9,
+        "to": 54
+      },
+      {
+        "from": 9,
+        "to": 61
+      },
+      {
+        "from": 10,
+        "to": 60
+      },
+      {
+        "from": 10,
+        "to": 1
+      },
+      {
+        "from": 11,
+        "to": 63
+      },
+      {
+        "from": 11,
+        "to": 89
+      },
+      {
+        "from": 12,
+        "to": 35
+      },
+      {
+        "from": 12,
+        "to": 25
+      },
+      {
+        "from": 13,
+        "to": 5
+      },
+      {
+        "from": 13,
+        "to": 45
+      },
+      {
+        "from": 14,
+        "to": 1
+      },
+      {
+        "from": 14,
+        "to": 22
+      },
+      {
+        "from": 15,
+        "to": 87
+      },
+      {
+        "from": 15,
+        "to": 93
+      },
+      {
+        "from": 16,
+        "to": 94
+      },
+      {
+        "from": 16,
+        "to": 49
+      },
+      {
+        "from": 17,
+        "to": 75
+      },
+      {
+        "from": 17,
+        "to": 44
+      },
+      {
+        "from": 18,
+        "to": 94
+      },
+      {
+        "from": 18,
+        "to": 78
+      },
+      {
+        "from": 19,
+        "to": 80
+      },
+      {
+        "from": 19,
+        "to": 47
+      },
+      {
+        "from": 20,
+        "to": 40
+      },
+      {
+        "from": 20,
+        "to": 32
+      },
+      {
+        "from": 21,
+        "to": 56
+      },
+      {
+        "from": 21,
+        "to": 69
+      },
+      {
+        "from": 22,
+        "to": 37
+      },
+      {
+        "from": 22,
+        "to": 29
+      },
+      {
+        "from": 23,
+        "to": 45
+      },
+      {
+        "from": 23,
+        "to": 99
+      },
+      {
+        "from": 24,
+        "to": 2
+      },
+      {
+        "from": 24,
+        "to": 68
+      },
+      {
+        "from": 25,
+        "to": 64
+      },
+      {
+        "from": 25,
+        "to": 55
+      },
+      {
+        "from": 26,
+        "to": 38
+      },
+      {
+        "from": 26,
+        "to": 9
+      },
+      {
+        "from": 27,
+        "to": 6
+      },
+      {
+        "from": 27,
+        "to": 84
+      },
+      {
+        "from": 28,
+        "to": 89
+      },
+      {
+        "from": 28,
+        "to": 59
+      },
+      {
+        "from": 29,
+        "to": 91
+      },
+      {
+        "from": 29,
+        "to": 13
+      },
+      {
+        "from": 30,
+        "to": 15
+      },
+      {
+        "from": 30,
+        "to": 3
+      },
+      {
+        "from": 31,
+        "to": 96
+      },
+      {
+        "from": 31,
+        "to": 39
+      },
+      {
+        "from": 32,
+        "to": 10
+      },
+      {
+        "from": 32,
+        "to": 25
+      },
+      {
+        "from": 33,
+        "to": 26
+      },
+      {
+        "from": 33,
+        "to": 91
+      },
+      {
+        "from": 34,
+        "to": 12
+      },
+      {
+        "from": 34,
+        "to": 48
+      },
+      {
+        "from": 35,
+        "to": 46
+      },
+      {
+        "from": 35,
+        "to": 94
+      },
+      {
+        "from": 36,
+        "to": 30
+      },
+      {
+        "from": 36,
+        "to": 63
+      },
+      {
+        "from": 37,
+        "to": 29
+      },
+      {
+        "from": 37,
+        "to": 87
+      },
+      {
+        "from": 38,
+        "to": 58
+      },
+      {
+        "from": 38,
+        "to": 7
+      },
+      {
+        "from": 39,
+        "to": 74
+      },
+      {
+        "from": 39,
+        "to": 96
+      },
+      {
+        "from": 40,
+        "to": 53
+      },
+      {
+        "from": 40,
+        "to": 95
+      },
+      {
+        "from": 41,
+        "to": 83
+      },
+      {
+        "from": 41,
+        "to": 5
+      },
+      {
+        "from": 42,
+        "to": 46
+      },
+      {
+        "from": 42,
+        "to": 84
+      },
+      {
+        "from": 43,
+        "to": 51
+      },
+      {
+        "from": 43,
+        "to": 3
+      },
+      {
+        "from": 44,
+        "to": 35
+      },
+      {
+        "from": 44,
+        "to": 5
+      },
+      {
+        "from": 45,
+        "to": 81
+      },
+      {
+        "from": 45,
+        "to": 79
+      },
+      {
+        "from": 46,
+        "to": 13
+      },
+      {
+        "from": 46,
+        "to": 87
+      },
+      {
+        "from": 47,
+        "to": 80
+      },
+      {
+        "from": 47,
+        "to": 93
+      },
+      {
+        "from": 48,
+        "to": 14
+      },
+      {
+        "from": 48,
+        "to": 78
+      },
+      {
+        "from": 49,
+        "to": 0
+      },
+      {
+        "from": 49,
+        "to": 10
+      },
+      {
+        "from": 50,
+        "to": 11
+      },
+      {
+        "from": 50,
+        "to": 85
+      },
+      {
+        "from": 51,
+        "to": 80
+      },
+      {
+        "from": 51,
+        "to": 24
+      },
+      {
+        "from": 52,
+        "to": 43
+      },
+      {
+        "from": 52,
+        "to": 28
+      },
+      {
+        "from": 53,
+        "to": 4
+      },
+      {
+        "from": 53,
+        "to": 91
+      },
+      {
+        "from": 54,
+        "to": 38
+      },
+      {
+        "from": 54,
+        "to": 49
+      },
+      {
+        "from": 55,
+        "to": 61
+      },
+      {
+        "from": 55,
+        "to": 33
+      },
+      {
+        "from": 56,
+        "to": 53
+      },
+      {
+        "from": 56,
+        "to": 95
+      },
+      {
+        "from": 57,
+        "to": 77
+      },
+      {
+        "from": 57,
+        "to": 73
+      },
+      {
+        "from": 58,
+        "to": 95
+      },
+      {
+        "from": 58,
+        "to": 77
+      },
+      {
+        "from": 59,
+        "to": 16
+      },
+      {
+        "from": 59,
+        "to": 10
+      },
+      {
+        "from": 60,
+        "to": 98
+      },
+      {
+        "from": 60,
+        "to": 35
+      },
+      {
+        "from": 61,
+        "to": 81
+      },
+      {
+        "from": 61,
+        "to": 39
+      },
+      {
+        "from": 62,
+        "to": 79
+      },
+      {
+        "from": 62,
+        "to": 7
+      },
+      {
+        "from": 63,
+        "to": 55
+      },
+      {
+        "from": 63,
+        "to": 47
+      },
+      {
+        "from": 64,
+        "to": 16
+      },
+      {
+        "from": 64,
+        "to": 74
+      },
+      {
+        "from": 65,
+        "to": 91
+      },
+      {
+        "from": 65,
+        "to": 58
+      },
+      {
+        "from": 66,
+        "to": 80
+      },
+      {
+        "from": 66,
+        "to": 24
+      },
+      {
+        "from": 67,
+        "to": 52
+      },
+      {
+        "from": 67,
+        "to": 93
+      },
+      {
+        "from": 68,
+        "to": 73
+      },
+      {
+        "from": 68,
+        "to": 8
+      },
+      {
+        "from": 69,
+        "to": 7
+      },
+      {
+        "from": 69,
+        "to": 1
+      },
+      {
+        "from": 70,
+        "to": 19
+      },
+      {
+        "from": 70,
+        "to": 66
+      },
+      {
+        "from": 71,
+        "to": 87
+      },
+      {
+        "from": 71,
+        "to": 41
+      },
+      {
+        "from": 72,
+        "to": 69
+      },
+      {
+        "from": 72,
+        "to": 85
+      },
+      {
+        "from": 73,
+        "to": 10
+      },
+      {
+        "from": 73,
+        "to": 35
+      },
+      {
+        "from": 74,
+        "to": 80
+      },
+      {
+        "from": 74,
+        "to": 26
+      },
+      {
+        "from": 75,
+        "to": 26
+      },
+      {
+        "from": 75,
+        "to": 11
+      },
+      {
+        "from": 76,
+        "to": 83
+      },
+      {
+        "from": 76,
+        "to": 62
+      },
+      {
+        "from": 77,
+        "to": 17
+      },
+      {
+        "from": 77,
+        "to": 48
+      },
+      {
+        "from": 78,
+        "to": 11
+      },
+      {
+        "from": 78,
+        "to": 42
+      },
+      {
+        "from": 79,
+        "to": 16
+      },
+      {
+        "from": 79,
+        "to": 23
+      },
+      {
+        "from": 80,
+        "to": 61
+      },
+      {
+        "from": 80,
+        "to": 89
+      },
+      {
+        "from": 81,
+        "to": 78
+      },
+      {
+        "from": 81,
+        "to": 76
+      },
+      {
+        "from": 82,
+        "to": 72
+      },
+      {
+        "from": 82,
+        "to": 45
+      },
+      {
+        "from": 83,
+        "to": 32
+      },
+      {
+        "from": 83,
+        "to": 69
+      },
+      {
+        "from": 84,
+        "to": 70
+      },
+      {
+        "from": 84,
+        "to": 18
+      },
+      {
+        "from": 85,
+        "to": 24
+      },
+      {
+        "from": 85,
+        "to": 36
+      },
+      {
+        "from": 86,
+        "to": 76
+      },
+      {
+        "from": 86,
+        "to": 69
+      },
+      {
+        "from": 87,
+        "to": 74
+      },
+      {
+        "from": 87,
+        "to": 77
+      },
+      {
+        "from": 88,
+        "to": 19
+      },
+      {
+        "from": 88,
+        "to": 73
+      },
+      {
+        "from": 89,
+        "to": 23
+      },
+      {
+        "from": 89,
+        "to": 95
+      },
+      {
+        "from": 90,
+        "to": 8
+      },
+      {
+        "from": 90,
+        "to": 74
+      },
+      {
+        "from": 91,
+        "to": 2
+      },
+      {
+        "from": 91,
+        "to": 60
+      },
+      {
+        "from": 92,
+        "to": 34
+      },
+      {
+        "from": 92,
+        "to": 35
+      },
+      {
+        "from": 93,
+        "to": 74
+      },
+      {
+        "from": 93,
+        "to": 33
+      },
+      {
+        "from": 94,
+        "to": 1
+      },
+      {
+        "from": 94,
+        "to": 79
+      },
+      {
+        "from": 95,
+        "to": 52
+      },
+      {
+        "from": 95,
+        "to": 18
+      },
+      {
+        "from": 96,
+        "to": 49
+      },
+      {
+        "from": 96,
+        "to": 36
+      },
+      {
+        "from": 97,
+        "to": 23
+      },
+      {
+        "from": 97,
+        "to": 86
+      },
+      {
+        "from": 98,
+        "to": 39
+      },
+      {
+        "from": 98,
+        "to": 74
+      },
+      {
+        "from": 99,
+        "to": 62
+      },
+      {
+        "from": 99,
+        "to": 94
+      }
+    ],
+    "clusters": [
+      {
+        "id": 0,
+        "nodeIds": [
+          0,
+          1,
+          10,
+          60,
+          91,
+          29,
+          37,
+          87,
+          15,
+          93,
+          67,
+          2,
+          94,
+          35,
+          12,
+          3,
+          76,
+          83,
+          41,
+          5,
+          13,
+          46,
+          42,
+          78,
+          48,
+          8,
+          68,
+          24,
+          51,
+          80,
+          7,
+          38,
+          26,
+          33,
+          55,
+          63,
+          11,
+          50,
+          85,
+          72,
+          82,
+          45,
+          23,
+          97,
+          86,
+          69,
+          21,
+          56,
+          53,
+          40,
+          20,
+          32,
+          25,
+          64,
+          16,
+          49,
+          54,
+          9,
+          61,
+          81,
+          39,
+          74,
+          90,
+          98,
+          31,
+          96,
+          4,
+          36,
+          30,
+          59,
+          28,
+          52,
+          43,
+          95,
+          58,
+          77,
+          57,
+          73,
+          88,
+          19,
+          70,
+          66,
+          84,
+          27,
+          6,
+          18,
+          47,
+          17,
+          44,
+          75,
+          65,
+          89,
+          79,
+          62,
+          99,
+          34,
+          92,
+          14,
+          22,
+          71
+        ],
+        "size": 100,
+        "centerX": 839,
+        "centerY": 425,
+        "isIsolated": false
+      }
+    ]
+  },
+  "traces": [
+    {
+      "timestamp": "2025-08-31T14:19:45.616419+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 55,
+      "receiver": 61,
+      "content": "Hello from the gossip network!",
+      "ttl": 20,
+      "isDirect": true
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616434+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 55,
+      "receiver": 33,
+      "content": "Hello from the gossip network!",
+      "ttl": 20,
+      "isDirect": true
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616452+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 61,
+      "receiver": 39,
+      "content": "Hello from the gossip network!",
+      "ttl": 19,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61646+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 33,
+      "receiver": 91,
+      "content": "Hello from the gossip network!",
+      "ttl": 19,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616468+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 39,
+      "receiver": 96,
+      "content": "Hello from the gossip network!",
+      "ttl": 18,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616473+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 91,
+      "receiver": 60,
+      "content": "Hello from the gossip network!",
+      "ttl": 18,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616481+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 33,
+      "receiver": 26,
+      "content": "Hello from the gossip network!",
+      "ttl": 19,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616485+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 96,
+      "receiver": 36,
+      "content": "Hello from the gossip network!",
+      "ttl": 17,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616493+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 26,
+      "receiver": 9,
+      "content": "Hello from the gossip network!",
+      "ttl": 18,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616496+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 36,
+      "receiver": 63,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616501+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 61,
+      "receiver": 81,
+      "content": "Hello from the gossip network!",
+      "ttl": 19,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616508+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 63,
+      "receiver": 47,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616509+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 60,
+      "receiver": 35,
+      "content": "Hello from the gossip network!",
+      "ttl": 17,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616516+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 26,
+      "receiver": 38,
+      "content": "Hello from the gossip network!",
+      "ttl": 18,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616551+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 9,
+      "receiver": 54,
+      "content": "Hello from the gossip network!",
+      "ttl": 17,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61656+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 35,
+      "receiver": 46,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61657+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 38,
+      "receiver": 58,
+      "content": "Hello from the gossip network!",
+      "ttl": 17,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616579+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 91,
+      "receiver": 2,
+      "content": "Hello from the gossip network!",
+      "ttl": 18,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616584+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 46,
+      "receiver": 87,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616571+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 54,
+      "receiver": 49,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616595+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 46,
+      "receiver": 13,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616597+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 36,
+      "receiver": 30,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616604+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 58,
+      "receiver": 77,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61661+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 49,
+      "receiver": 10,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616612+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 13,
+      "receiver": 45,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616615+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 35,
+      "receiver": 94,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616617+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 63,
+      "receiver": 55,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616619+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 49,
+      "receiver": 0,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616624+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 13,
+      "receiver": 5,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616633+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 94,
+      "receiver": 79,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616636+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 77,
+      "receiver": 48,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616642+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 30,
+      "receiver": 3,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616642+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 0,
+      "receiver": 1,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616675+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 79,
+      "receiver": 23,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616682+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 48,
+      "receiver": 78,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616684+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 58,
+      "receiver": 95,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61669+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 60,
+      "receiver": 98,
+      "content": "Hello from the gossip network!",
+      "ttl": 17,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616691+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 47,
+      "receiver": 80,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616698+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 30,
+      "receiver": 15,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.6167+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 38,
+      "receiver": 7,
+      "content": "Hello from the gossip network!",
+      "ttl": 17,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616718+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 7,
+      "receiver": 59,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616719+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 79,
+      "receiver": 16,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616739+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 48,
+      "receiver": 14,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616757+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 14,
+      "receiver": 22,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616762+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 77,
+      "receiver": 17,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616764+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 1,
+      "receiver": 29,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616784+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 39,
+      "receiver": 74,
+      "content": "Hello from the gossip network!",
+      "ttl": 18,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616788+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 78,
+      "receiver": 42,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616791+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 80,
+      "receiver": 89,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616797+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 78,
+      "receiver": 11,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616803+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 22,
+      "receiver": 37,
+      "content": "Hello from the gossip network!",
+      "ttl": 12,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616813+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 17,
+      "receiver": 75,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616825+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 3,
+      "receiver": 76,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616826+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 3,
+      "receiver": 12,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616827+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 2,
+      "receiver": 67,
+      "content": "Hello from the gossip network!",
+      "ttl": 17,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616844+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 76,
+      "receiver": 62,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616853+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 47,
+      "receiver": 93,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616854+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 12,
+      "receiver": 25,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616858+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 76,
+      "receiver": 83,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616975+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 17,
+      "receiver": 44,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616978+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 23,
+      "receiver": 99,
+      "content": "Hello from the gossip network!",
+      "ttl": 13,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616983+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 67,
+      "receiver": 52,
+      "content": "Hello from the gossip network!",
+      "ttl": 16,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.616989+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 83,
+      "receiver": 69,
+      "content": "Hello from the gossip network!",
+      "ttl": 12,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 83,
+      "receiver": 32,
+      "content": "Hello from the gossip network!",
+      "ttl": 12,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617004+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 95,
+      "receiver": 18,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617023+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 42,
+      "receiver": 84,
+      "content": "Hello from the gossip network!",
+      "ttl": 12,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617005+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 25,
+      "receiver": 64,
+      "content": "Hello from the gossip network!",
+      "ttl": 12,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61707+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 52,
+      "receiver": 28,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617075+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 84,
+      "receiver": 70,
+      "content": "Hello from the gossip network!",
+      "ttl": 11,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617079+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 52,
+      "receiver": 43,
+      "content": "Hello from the gossip network!",
+      "ttl": 15,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61713+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 70,
+      "receiver": 19,
+      "content": "Hello from the gossip network!",
+      "ttl": 10,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617173+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 70,
+      "receiver": 66,
+      "content": "Hello from the gossip network!",
+      "ttl": 10,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617186+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 66,
+      "receiver": 24,
+      "content": "Hello from the gossip network!",
+      "ttl": 9,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617197+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 24,
+      "receiver": 68,
+      "content": "Hello from the gossip network!",
+      "ttl": 8,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617239+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 43,
+      "receiver": 51,
+      "content": "Hello from the gossip network!",
+      "ttl": 14,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.617243+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 68,
+      "receiver": 73,
+      "content": "Hello from the gossip network!",
+      "ttl": 7,
+      "isDirect": false
+    },
+    {
+      "timestamp": "2025-08-31T14:19:45.61726+02:00",
+      "messageId": "4407ec65807cee3637ae716261d418f1",
+      "originalSender": 55,
+      "immediateForwarder": 68,
+      "receiver": 8,
+      "content": "Hello from the gossip network!",
+      "ttl": 7,
+      "isDirect": false
+    }
+  ],
+  "startTime": "2025-08-31T14:19:45.514677+02:00"
+}
