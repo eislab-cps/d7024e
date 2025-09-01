@@ -52,7 +52,7 @@ Your nodes must be able to form networks as described in the [Kademlia paper](ka
 3. **Node lookup**: When part of a network, each node must be able to retrieve the contact information of any other node in the same network.
 
 **M2**: *Object Distribution*. **[5p]**.
-The networks your nodes form must be able to manage the distribution, storage and retrieval of data objects, as described in the Kademlia paper. Note that in the Kademlia paper, objects are referred to as *values* and their hashes as *keys*.
+The network your nodes form must be able to manage the distribution, storage and retrieval of data objects, as described in the Kademlia paper. Note that in the Kademlia paper, objects are referred to as *values* and their hashes as *keys*.
 Concretely, you must implement the following aspects of Kademlia:
 1. **Storing objects**: When part of a network, it must be possible for any node to upload an object that will end up at the designated storage nodes. In Kademlia terminology, the *designated nodes* are the *K* nodes nearest to the hash of the data object in question.
 2. **Finding objects**: When part of a network with uploaded objects, it must be possible to find and download any object, as long as it is stored by at least one designated node.
@@ -208,9 +208,8 @@ Here's some advice we like to give students during sprint 0.
 But it's probably better to put it in one place so everyone gets the same information and so that you can refer back to it later.
 
 ### Additional resources
-The PDF describing the lab assignment (in Canvas) contains a link to a web page in a footnote.
-This page contains helpful information on implementation details that are missing in the original paper that describes Kademlia.
-Because it is easy to miss, we also include it here:
+
+The Kademlia paper leaves out some details. This page fills in some of those details:
 [https://xlattice.sourceforge.net/components/protocol/kademlia/specs.html](https://xlattice.sourceforge.net/components/protocol/kademlia/specs.html)
 
 
@@ -255,6 +254,6 @@ Try this: imagine that we change the assignment so that the students next year w
 
 # Notes
 [^1]: While the [official paper](https://pdos.csail.mit.edu/~petar/papers/maymounkov-kademlia-lncs.pdf) should be the document you first examine to understand the algorithm, there are plenty of complementary resources that can be helpful for clarifying some parts of that paper, such as [this interactive description](https://kelseyc18.github.io/kademlia\_vis/basics) or [this specification](http://xlattice.sourceforge.net/components/protocol/kademlia/specs.html).
-[^2]: You can read more about test coverage in Go at [https://blog.golang.org/cover/](https://blog.golang.org/cover/). If you use an IDE like [GoLand](https://www.jetbrains.com/go/) which you can get a student license via your LTU e-mail address, tools for test coverage are built in.  
+[^2]: You can read more about test coverage in Go at [https://blog.golang.org/cover/](https://blog.golang.org/cover/). If you use an IDE like [GoLand](https://www.jetbrains.com/go/) which you can get a student license via your LTU e-mail address, tools for test coverage are built in.
 [^3]: If you choose to use Docker as a container solution, which we recommend, you may want to use the Docker image described at [https://hub.docker.com/r/larjim/kademlialab/](https://hub.docker.com/r/larjim/kademlialab/) as a starting point.
 [^4]: Docker Compose, which you can read about at [https://docs.docker.com/compose/](https://docs.docker.com/compose/), may be a good alternative if you choose to use Docker. There is already a Docker compose file named `docker-compose-lab.yml` in this repo.
