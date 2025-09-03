@@ -12,7 +12,7 @@ FROM alpine:latest
 #
 # $ docker build . -t kadlab
 
-COPY kademlia.exe .
-RUN mv kademlia.exe kademlia
+COPY kademlia_linux.exe .
+RUN mv kademlia_linux.exe kademlia
 
 ENTRYPOINT ["./kademlia"] 
