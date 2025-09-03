@@ -99,7 +99,7 @@ Completing this objective requires that U1 is also completed.
 To allow the original uploader of an object to stop refreshing it, you add the `forget` CLI command, which accepts the hash of the object that is no longer to be refreshed.
 Completing this objective requires that U2 is also completed.
 
-**U4**: *RESTful application interface*. **[6p]**.
+**U4**: *RESTful application interface*. **[2p]**.
 A CLI interface may be useful for humans with terminals, but it makes it difficult to integrate your storage network into web applications or other applications.
 To remedy this, you will make every node also provide a RESTful as described at: [https://www.ics.uci.edu/~fielding/pubs/dissertation/rest\_arch\_style.htm](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest\_arch\_style.htm).
 HTTP interface with the following endpoints:
