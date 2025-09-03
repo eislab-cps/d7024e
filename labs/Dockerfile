@@ -11,3 +11,8 @@ FROM alpine:latest
 # "kadlab", which you do by using the following command:
 #
 # $ docker build . -t kadlab
+
+COPY kademlia.exe .
+RUN mv kademlia.exe kademlia
+
+ENTRYPOINT ["./kademlia"] 
