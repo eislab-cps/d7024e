@@ -7,12 +7,10 @@ import (
 	"fmt"
 	"net"
 	"log"
-	// "strconv"
 )
 
 
 func server(ip string, port int) {
-	// port_s := strconv.FormatInt(port, 10)
 	addr := net.UDPAddr{Port: port, IP: net.ParseIP(ip)}
 	conn, err := net.ListenUDP("udp", &addr)
 	if (err != nil) {
