@@ -7,7 +7,28 @@ import (
 	"fmt"
 	"net"
 	"log"
+	// "strconv"
 )
+
+
+func server(ip string, port int) {
+	// port_s := strconv.FormatInt(port, 10)
+	addr := net.UDPAddr{Port: port, IP: net.ParseIP(ip)}
+	conn, err := net.ListenUDP("udp", &addr)
+	if (err != nil) {
+		log.Fatalf("Failed to listen %v\n", err)
+	}
+	defer conn.Close()
+	for {
+		buf := make([]byte, 100)
+		
+		n, err := conn.Read(buf)
+		if err != nil {
+			log.Fatalf("Failed to read packet %v\n", err)
+		}
+		fmt.Printf("Received %v bytes %v\n", n, string(buf))
+	}
+}
 
 func main() {
 	fmt.Println("Pretending to run the kademlia app...")
@@ -17,40 +38,8 @@ func main() {
 	// fmt.Println(contact.String())
 	// fmt.Printf("%v\n", contact)
 
-	conn, err := net.Dial("udp", "8.8.8.8:80")
-    if err != nil {
-        log.Fatal(err)
-    }
-    defer conn.Close()
 
-    localAddr := conn.LocalAddr().(*net.UDPAddr)
-
-    fmt.Printf("%v\n", localAddr.IP)
-
-
-	for {
-
-	}
-
-	return
-
-	// port_s := stronv.FormatInt(25565)
-
-	// ln, err := net.Listen("udp", ":" + port_s)
-	// if (err != nil) {
-	// 	panic("failed to listen")
-	// }
-
-	// for {
-	// 	buf := make([]byte, 10)
-	// 	conn, err := ln.Accept()
-	// 	if err != nil {
-	// 		panic("failed accept")
-	// 	}
-
-	// 	conn.Read(buf)
-	// 	fmt.printf("%v", buf)
-
-	// 	conn.Close()
-	// }
+	server("0.0.0.0", 8000)
+	fmt.Printf("left loop\n")
+	for {}
 }
