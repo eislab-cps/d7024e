@@ -3,29 +3,13 @@
 package main
 
 import (
-	// "d7024e/kademlia"
+	"d7024e/internal/kademlia"
 	"fmt"
-	"net"
-	"log"
 )
 
 
 func server(ip string, port int) {
-	addr := net.UDPAddr{Port: port, IP: net.ParseIP(ip)}
-	conn, err := net.ListenUDP("udp", &addr)
-	if (err != nil) {
-		log.Fatalf("Failed to listen %v\n", err)
-	}
-	defer conn.Close()
-	for {
-		buf := make([]byte, 100)
-		
-		n, err := conn.Read(buf)
-		if err != nil {
-			log.Fatalf("Failed to read packet %v\n", err)
-		}
-		fmt.Printf("Received %v bytes %v\n", n, string(buf))
-	}
+
 }
 
 func main() {
@@ -37,7 +21,8 @@ func main() {
 	// fmt.Printf("%v\n", contact)
 
 
-	server("0.0.0.0", 8000)
-	fmt.Printf("left loop\n")
+	kademlia.Listen("0.0.0.0", 8000)
+
+
 	for {}
 }
