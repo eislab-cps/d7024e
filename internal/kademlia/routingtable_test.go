@@ -1,30 +1,72 @@
 package kademlia
 
 import (
+
 	"fmt"
 	"testing"
 )
 
-// FIXME: This test doesn't actually test anything. There is only one assertion
-// that is included as an example.
 
 func TestRoutingTable(t *testing.T) {
+
+
+	amountOfContacts := 15
+
 	rt := NewRoutingTable(NewContact(NewKademliaID("FFFFFFFF00000000000000000000000000000000"), "localhost:8000"))
 
-	rt.AddContact(NewContact(NewKademliaID("FFFFFFFF00000000000000000000000000000000"), "localhost:8001"))
-	rt.AddContact(NewContact(NewKademliaID("1111111100000000000000000000000000000000"), "localhost:8002"))
-	rt.AddContact(NewContact(NewKademliaID("1111111200000000000000000000000000000000"), "localhost:8002"))
-	rt.AddContact(NewContact(NewKademliaID("1111111300000000000000000000000000000000"), "localhost:8002"))
-	rt.AddContact(NewContact(NewKademliaID("1111111400000000000000000000000000000000"), "localhost:8002"))
-	rt.AddContact(NewContact(NewKademliaID("2111111400000000000000000000000000000000"), "localhost:8002"))
+	for i := 0; i < amountOfContacts; i++ {
+		
+		stringI := fmt.Sprintf("%02d", i)
+		contact := NewContact(NewKademliaID("0000000"+stringI+"00000000000000000000000000000000"), "localhost:800"+stringI)
+		rt.AddContact(contact)
+		rt.AddContact(contact) // adding duplicate contact
+	}
 
 	contacts := rt.FindClosestContacts(NewKademliaID("2111111400000000000000000000000000000000"), 20)
+
+
+
 	for i := range contacts {
+	
 		fmt.Println(contacts[i].String())
+	} 
+
+	fmt.Println("Total contacts found:", len(contacts))
+
+
+	//Check correct amount of contacts are added
+
+	if len(contacts) != amountOfContacts {
+		t.Fatalf("Expected %d contacts, got %d", amountOfContacts, len(contacts))
 	}
 
-	// TODO: This is just an example. Make more meaningful assertions.
-	if len(contacts) != 6 {
-		t.Fatalf("Expected 6 contacts but instead got %d", len(contacts))
+
+	//check make sure the correct contacts are added to the routing table
+
+	for i := 0; i < amountOfContacts; i++ {
+		stringI := fmt.Sprintf("%02d", i)
+		expectedContact := NewContact(NewKademliaID("0000000"+stringI+"00000000000000000000000000000000"), "localhost:800"+stringI)
+		found := false
+		for _, contact := range contacts {
+			if contact.ID.String() == expectedContact.ID.String() {
+				found = true
+				break
+			}
+		}
+		if !found {
+			t.Fatalf("Expected contact %s not found", expectedContact.String())
+		}
 	}
+
+	//check that the there are no duplicates in the routingtable
+
+	uniqueContacts := make(map[string]struct{})
+	for _, contact := range contacts {
+		uniqueContacts[contact.ID.String()] = struct{}{}
+	}
+	if len(uniqueContacts) != len(contacts) {
+		t.Fatal("Expected no duplicate contacts")
+	}
+
+
 }
